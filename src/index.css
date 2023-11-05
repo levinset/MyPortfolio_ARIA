@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* general styles */
+* {
+  @apply m-0 box-border border-0 p-0 no-underline;
+  outline: 0;
+  list-style: none;
+}
+
+/* define root */
+:root {
+  --primary-hue: 270;
+  --black-lightness: 15%;
+  --dark-lightness: 44%;
+  --light-lightness: 94%;
+  --white-lightness: 100%;
+  --color-primary: hsl(var(--primary-hue), 89%, 41%);
+  --color-white: hsl(0, 5%, var(--white-lightness));
+  --color-light: hsl(var(--primary-hue), 5%, var(--light-lightness));
+  --color-black: hsl(var(--primary-hue), 5%, var(--black-lightness));
+  --color-dark: hsl(var(--primary-hue), 5%, var(--dark-lightness));
+
+  /* GENERAL CONTAINER VARIABLES */
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+
+  /* BORDER RADIUS VARIABLES */
+  --border-radius-1: 1.2rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 0.5rem;
+
+  /* GENERAL TRANSITION VARIABLE */
+  --transition: all 500ms ease;
+}
+html {
+  @apply scroll-smooth;
+}
+body {
+  @apply text-[0.9rem] leading-[1.6];
+  font-family: "Montserrat", sans-serif;
+}
+
+/* GENERAL CONTAINER CLASS */
+.container {
+  @apply w-[var(--container-width-lg)] max-w-[1920px];
+  margin-inline: auto;
+}
+
+/* GENERAL SECTION STYLES */
+section {
+  @apply px-0 py-40 transition-[var(--transition)];
+  background: var(--color-light);
+}
+section:nth-child(even) {
+  background: var(--color-white);
+}
+section > h2 {
+  @apply text-center;
+}
+section > p {
+  @apply mx-auto mb-16 mt-2 w-2/5 text-center;
+}
+
+/* GENERAL SECTION STYLES */
+a {
+  @apply text-[color:var(--color-white)] transition-[var(--transition)];
+}
+
+/* GENERAL HEADING STYLES */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply leading-[1.1] text-[color:var(--color-black)];
+}
+h1 {
+  @apply text-5xl;
+}
+h2 {
+  @apply text-[2rem];
+}
+h3 {
+  @apply text-[1.6rem];
+}
+h4 {
+  @apply text-[1.1rem];
+}
+h5 {
+  @apply text-[0.95rem];
+}
+h6 {
+  @apply text-[0.8rem];
+}
+
+/* GENERAL IMAGES STYLES */
+img {
+  @apply block w-full object-cover;
+}
+
+/* GENERAL BUTTON STYLES */
+.btn {
+  @apply inline-block flex w-fit cursor-pointer items-center gap-4 rounded-[var(--border-radius-2)] border-2 border-solid border-transparent px-10 py-[0.6rem] text-[color:var(--color-black)] hover:translate-y-[-0.5rem] hover:border-[color:var(--color-light)] hover:bg-transparent;
+  background: var(--color-light);
+}
+.btn.white {
+  background: var(--color-white);
+}
+.btn.white:hover {
+  @apply border-[color:var(--color-white)];
+  background: transparent;
+}
+.btn.primary {
+  @apply text-[white] hover:border-[color:var(--color-primary)] hover:text-[color:var(--color-primary)];
+  background: var(--color-primary);
+
+  /* text color always white that's why i didn't use a variable color */
+}
+.btn.primary:hover {
+  background: transparent;
+}
+.btn.sm {
+  @apply px-[1.2rem] py-2;
+}
+
+/* MEDIA QUERIES (tablets) */
+@media screen and (max-width: 1024px) {
+  body {
+    @apply text-base;
+  }
+  .container {
+    @apply w-[var(--container-width-md)];
+  }
+  section {
+    @apply px-0 py-32;
+  }
+  section > p {
+    @apply mb-12 w-[72%];
+  }
+  h1 {
+    @apply text-[2rem];
+  }
+}
+
+/* MEDIA QUERIES (phones) */
+@media screen and (max-width: 600px) {
+  h1 {
+    @apply text-[2.4rem];
+  }
+  h2 {
+    @apply text-[1.8rem];
+  }
+  h3 {
+    @apply text-[1.4rem];
+  }
+  h4 {
+    @apply text-base;
+  }
+  .btn {
+    @apply px-6 py-[0.6rem];
+  }
+  section > p {
+    @apply w-[var(--container-width-md)];
+  }
+}
