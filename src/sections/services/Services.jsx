@@ -4,7 +4,7 @@ import Card from "../../components/Card";
 const Services = () => {
   return (
     <section className="" id="services">
-      <h2 className=" font-bold">My Services</h2>
+      <h1 className=" font-bold">My Services</h1>
       <p>I give you the best in all services below</p>
       <div className=" container grid  grid-cols-2 gap-[2rem]  max-md:grid-cols-1 max-md:gap-[1.5rem]">
         {data.map((item) => (
@@ -19,7 +19,7 @@ const Services = () => {
               {item.icon}
             </div>
             <div className=" flex flex-col items-start">
-              <h4 className=" mb-[0.7rem] font-bold "> {item.title} </h4>
+              <h2 className=" mb-[0.7rem] font-bold "> {item.title} </h2>
               <p>{item.desc} </p>
             </div>
             {/* </div> */}

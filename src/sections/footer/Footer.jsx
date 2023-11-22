@@ -7,7 +7,7 @@ const Footer = () => {
         <ul className=" flex justify-center gap-[1.5rem] max-md:hidden ">
           {links.map((fLink) => (
             <li key={fLink.id}>
-              <a href={fLink.link}>{fLink.title}</a>
+              <a  aria-label="footer link" href={fLink.link}>{fLink.title}</a>
             </li>
           ))}
         </ul>
@@ -16,6 +16,7 @@ const Footer = () => {
             <a
               key={social.id}
               href={social.link}
+              aria-label="social"
               target="_blank"
               rel="noopener noreferrer"
               className=" rounded-lg  bg-black  p-[0.6rem] text-white hover:translate-y-[-0.5rem] hover:opacity-[0.7rem] "

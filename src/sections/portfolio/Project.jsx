@@ -6,7 +6,7 @@ const Project = ({ project }) => {
       <div className=" mb-[1.5rem] h-fit max-h-[15rem] min-h-[7rem] w-[100%] overflow-hidden rounded-[--border-radius-2] bg-[--color-light]   ">
         <img src={project.image} alt=" Project Image" />
       </div>
-      <h4 className=" mb-[1rem] font-bold ">{project.title}</h4>
+      <h2 className=" mb-[1rem] font-bold ">{project.title}</h2>
       <p className=" mb-[1rem] ">{project.desc}</p>
       <div className=" flex flex-row justify-center gap-2">
         <a
@@ -14,6 +14,7 @@ const Project = ({ project }) => {
           className="rounded-lg border-2 border-black px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-black transition duration-150 ease-in-out  hover:border-neutral-100 hover:bg-[--color-primary] hover:bg-opacity-10 hover:text-neutral-100   dark:hover:bg-opacity-10"
           target="_blank"
           rel="noopner noreferrer"
+          aria-label="project demo"
         >
           Demo
         </a>
@@ -22,6 +23,7 @@ const Project = ({ project }) => {
           className="rounded-lg border-2 border-black px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-black transition duration-150 ease-in-out  hover:border-neutral-100 hover:bg-[--color-primary] hover:bg-opacity-10 hover:text-neutral-100  dark:hover:bg-opacity-10"
           target="_blank"
           rel="noopner noreferrer"
+          aria-label="project github"
         >
           Gitbub
         </a>

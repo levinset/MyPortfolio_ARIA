@@ -9,7 +9,7 @@ const Testimonial = ({ testimonial }) => {
           <img src={testimonial.avatar} alt="" />
         </div>
         <div className="">
-          <h6 className=" font-bold">{testimonial.name}</h6>
+          <h3 className=" font-bold">{testimonial.name}</h3>
           <small>{testimonial.profession}</small>
         </div>
       </div>

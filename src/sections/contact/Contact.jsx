@@ -10,6 +10,7 @@ const Contact = () => {
           <a
             key={contact.id}
             href={contact.link}
+            aria-label="cantact"
             target="_blank"
             rel="noopener noreferrer"
             className=" grid h-[5rem] w-[5rem] items-center justify-center overflow-hidden rounded-[1rem] border-2 border-solid border-transparent bg-[--color-primary] text-[2rem] text-white hover:translate-y-[-0.5rem] hover:border-[--color-primary] hover:bg-transparent hover:text-[--color-primary] max-md:h-[2.5rem]  max-md:w-[2.5rem] "

@@ -24,7 +24,7 @@ const Navbar = () => {
           <ul className=" flex gap-[3.5rem] text-[1.2rem]  max-lg:hidden">
             {data.map((item) => (
               <li key={item.id}>
-                <a href={item.link}>{item.title}</a>
+                <a aria-label="nave link" href={item.link}>{item.title}</a>
               </li>
             ))}
           </ul>
@@ -49,6 +49,7 @@ const Navbar = () => {
                 <a
                   className=" text-md block rounded-md px-3 py-2 text-base font-medium text-gray-300 transition-all duration-500 hover:bg-gray-700 hover:text-white "
                   href={item.link}
+                  aria-label="burger link"
                 >
                   {item.title}
                 </a>
