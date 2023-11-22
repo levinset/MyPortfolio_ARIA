@@ -1,6 +1,6 @@
 {
-  "homepage": "https://levinset.github.io/MyPortfolio",
-  "name": "myportfolio",
+  "homepage": "https://levinset.github.io/MyPortfolio_ARIA",
+  "name": "MyPortfolio_ARIA",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -28,7 +28,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
-    "gh-pages": "^6.0.0",
+    "gh-pages": "^6.1.0",
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.6",
