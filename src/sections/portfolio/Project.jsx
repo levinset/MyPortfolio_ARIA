@@ -25,7 +25,7 @@ const Project = ({ project }) => {
           rel="noopner noreferrer"
           aria-label="project github"
         >
-          Gitbub
+          Github
         </a>
       </div>
     </Card>
