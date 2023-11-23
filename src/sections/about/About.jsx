@@ -47,7 +47,7 @@ const About = () => {
             <a
               className=" mt-[2rem] flex flex-row justify-center gap-2 rounded-lg border-2 border-black px-7  pb-[8px] pt-[10px]  text-sm font-medium uppercase leading-normal text-black transition duration-150 ease-in-out  hover:border-neutral-100 hover:bg-[--color-primary] hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-opacity-10"
               href={CV}
-              aria-label="Read more about me on cv"
+              aria-label="download cv"
               download
             >
               Download CV <HiDownload />
