@@ -30,7 +30,7 @@ const Header = () => {
               <a
                 className=" rounded-lg border-2 border-black px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-black transition duration-150 ease-in-out  hover:border-neutral-100 hover:bg-[--color-primary] hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-opacity-10"
                 href="#contact"
-                aria-label="contact"
+                aria-label="lets talk"
               >
                 Lets Talk
               </a>
